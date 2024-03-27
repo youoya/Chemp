@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#427e79"
+    tools:context=".shop.AkciiActivity">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="26dp"
+        android:text="Акции и новости"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:text="Меню"
+        android:onClick="goMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="Хит"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="-5%"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="-10%"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="-20%"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="-25%"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@color/white"
+        android:text="Домой"
+        android:textColor="#039BE5"
+        android:onClick="goGlav"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="563dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:textSize="20dp"
+                android:background="#7da823"
+                android:text="Свайп влево скидки"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#9153b6"
+                android:text="Свайп влево скидки"
+                android:textColor="#212121"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#7da823"
+                android:textSize="20dp"
+                android:text="Новости об акциях(27.03.2024)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#9153b6"
+                android:text="Новости об акциях(26.03.2024)"
+                android:textColor="#212121"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#7da823"
+                android:textSize="20dp"
+                android:text="Новости об акциях(25.03.2024)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#9153b6"
+                android:text="Новости об акциях(24.03.2024)"
+                android:textColor="#212121"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#7da823"
+                android:textSize="20dp"
+                android:text="Новости об акциях(23.03.2024)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#9153b6"
+                android:text="Свайп в низ"
+                android:textColor="#212121"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#7da823"
+                android:textSize="20dp"
+                android:text="Новости об акциях(22.03.2024)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#9153b6"
+                android:text="Новости об акциях(21.03.2024)"
+                android:textColor="#212121"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
