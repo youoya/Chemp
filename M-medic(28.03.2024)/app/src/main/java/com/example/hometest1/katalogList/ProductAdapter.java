@@ -12,7 +12,6 @@ import com.example.hometest1.R;
 import java.util.ArrayList;
 
 class ProductAdapter extends ArrayAdapter<Product> {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
     private final LayoutInflater inflater;
     private final int layout;
     private final ArrayList<Product> productList;

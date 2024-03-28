@@ -1,4 +1,4 @@
-package com.example.hometest1.shop;
+package com.example.hometest1.User_information;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,19 +10,19 @@ import com.example.hometest1.Activity5;
 import com.example.hometest1.MenuActivity;
 import com.example.hometest1.R;
 
-public class AkciiActivity extends AppCompatActivity {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
+public class SettingsActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_akcii);
+        setContentView(R.layout.activity_settings);
     }
     public void goMenu (View v){
         Intent intent = new Intent(this, MenuActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в MenuActivity*/
         startActivity(intent);
     }
     public void goGlav (View v){
-        Intent intent = new Intent(this, Activity5.class);/* Объъект intent будет перенаправлять из this(текущая activity) в Activity5*/
+        Intent intent = new Intent(this, Activity5.class);/* Объъект intent будет перенаправлять из this(текущая activity) в MenuActivity*/
         startActivity(intent);
     }
 }

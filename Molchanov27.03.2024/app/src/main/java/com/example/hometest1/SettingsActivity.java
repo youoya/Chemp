@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class SettingsActivity extends AppCompatActivity {
-
+    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

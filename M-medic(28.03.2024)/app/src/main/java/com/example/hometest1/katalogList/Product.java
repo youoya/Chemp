@@ -1,7 +1,6 @@
 package com.example.hometest1.katalogList;
 
 public class Product {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
     private final String name;
     private int count;
     private final String unit;

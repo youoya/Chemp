@@ -14,7 +14,7 @@ import com.example.hometest1.MenuActivity;
 import com.example.hometest1.R;
 
 public class CardChangeActivity extends AppCompatActivity {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
+
     String[] countries = { "Клиент1 20.03.2003", "Клиент2 20.03.2003", "Клиент3 20.03.2003", "Клиент4 20.03.2003", "Клиент5 20.03.2003"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {

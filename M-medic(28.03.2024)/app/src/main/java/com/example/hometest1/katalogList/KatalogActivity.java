@@ -15,7 +15,7 @@ import com.example.hometest1.shop.Activity6;
 import java.util.ArrayList;
 
 public class KatalogActivity extends AppCompatActivity {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

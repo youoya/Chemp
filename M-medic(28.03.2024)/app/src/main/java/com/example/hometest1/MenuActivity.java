@@ -6,15 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.hometest1.Activity5;
+import com.example.hometest1.User_information.SettingsActivity;
 import com.example.hometest1.katalogList.KatalogActivity;
 import com.example.hometest1.shop.AkciiActivity;
 import com.example.hometest1.User_information.CardChangeActivity;
-import com.example.hometest1.R;
 import com.example.hometest1.shop.Activity6;
 
 public class MenuActivity extends AppCompatActivity {
-    //Автор: Молчанов Кирилл Вадимович (Конкурсант). Дата создания:27.03.2024
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +33,15 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void goCardChange(View v){
-        Intent intent = new Intent(this, CardChangeActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в Activity6*/
+        Intent intent = new Intent(this, CardChangeActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в CardChangeActivity*/
         startActivity(intent);
     }
     public  void goKatelog(View v){
-        Intent intent = new Intent(this, KatalogActivity.class);
+        Intent intent = new Intent(this, KatalogActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в KatalogActivity*/
         startActivity(intent);
     }
     public void goSettings (View v){
-        Intent intent = new Intent(this, SettingsActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в MenuActivity*/
+        Intent intent = new Intent(this, SettingsActivity.class);/* Объъект intent будет перенаправлять из this(текущая activity) в SettingsActivity*/
         startActivity(intent);
     }
 }
